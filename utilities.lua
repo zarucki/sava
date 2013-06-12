@@ -25,7 +25,7 @@ function Circle:__tostring()
   return 'centerX: ' .. self.centerX .. ', centerY: ' .. self.centerY .. ', radius: ' .. self.radius
 end
 
-function love.graphics.FilledCircle(circle, fillColor, countourColor)
+function Circle.drawFilledCircle(circle, fillColor, countourColor)
   local circleRadius = circle.radius
   if countourColor then
     love.graphics.setColor(countourColor)
